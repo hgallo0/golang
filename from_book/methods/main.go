@@ -20,6 +20,15 @@ type Address struct {
     ZipCode int
 }
 
+type Triangle struct {
+  base float64
+  hight float64
+}
+
+func (t *Triangle) area() float64 {
+  return 0.5 * (t.base * t.hight)
+}
+
 
 func (m *Movie) summary() string {
 
@@ -66,5 +75,8 @@ func main() {
 
     fmt.Println(m.summary())
     fmt.Println(a.summary())
+
+    t := Triangle{base:3, hight:5}
+    fmt.Println(t.area())
 
 }

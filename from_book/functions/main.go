@@ -19,8 +19,6 @@ func main () {
     fmt.Println("function called")
   }
 
-
-
   fn()
 
   // passing function as argument
